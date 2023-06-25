@@ -1,0 +1,35 @@
+Falaremos sobre alocação dinamica de memoria.
+
+. Duas partes na memória:
+  Voce deve saber que existe a parte dinamica na memoria(heap) e estatica(stack).
+
+. Funcoes de alocacao dinamica:
+  - malloc: aloca a memoria e nao inicializa 
+  - calloc: aloca a memoria e inicializa com 0
+  - realloc: altera o tamanho da memoria alocada
+  - free: libera a memoria alocada.
+
+. malloc
+  malloc aloca dinamicamente um tamanho especifico de memoria
+  ex: int n = 5;
+      int *ptr;
+      ptr = (int*) malloc (n * sizeof(int))
+
+. calloc
+  calloc aloca dinamicamente, mas inicializa com todos os bits 0.
+  ex: int n = 5;
+      int *ptr;
+      ptr = (int*) calloc (n,sizeof(int))
+
+. realloc
+  utilizada para alterar o tamanho alocado anteriormente pelo malloc. Mantem a informação anterior e adiciona os novos como lixo.
+  ex: int *pi;
+      pi = (int *) malloc(sizeof(int));
+      pi = (int *) realloc (pi, 5*sizeof(int));
+
+. free
+  elimina o espaco de memoria alocado, tendo em vista que essa liberacao nao e automatica.
+  ex: int n = 5;
+      int *ptr;
+      ptr = (int*) malloc (n * sizeof(int))
+      free(ptr);
