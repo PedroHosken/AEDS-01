@@ -1,0 +1,34 @@
+Falaremos agora do mundo reunido aos ponteiros
+
+.Endereço de memória:
+  Utilizamos "&" para obtermos o endereço de memória de determinada váriavel.
+  ex: printf("%p",&myage) nesse caso acessaremos o endereço de memória da váriavel myage.
+  obs: endereço de memória é diferente de valor da váriavel.
+
+.Definição de ponteiro:
+  Ponteiro é uma váriavel que armazena o endereço de memória de outra váriavel. 
+  Para ser inicializado, o ponteiro deve estar acompanhado de * e o endereço da variavel apontada é atribuida ao ponteiro.
+  ex: int Myage = 43;
+      int *ptr = &Myage; // o ponteiro necessita de tipo.
+
+. Derreferencia:
+  Significa acessar o conteudo da variavel apontada pelo ponteiro.
+  ex: printf("%d", *ptr); // Esse comando imprimiria o valor da variavel apontada, nesse caso Myage, que seria o valor 43.
+  Voce pode ussar esse comando tambem para alterar o valor da variavel. ex:*ptr = 51;// Myage agora possui o valor de 51.
+
+. Inicializando Ponteiro:
+  Voce pode inicializar-lo com o endereço, 0 ou NULL. ex: int *ptr = NULL;
+
+.obs: o comando sizeof retorna o tamanho da variavel na memória.
+
+. Ponteiros x Arranjos
+  Em C o nome da váriavel do tipo arranjo é um ponteiro para o primeiro elemento do arranjo. Logo, o endereço do primeiro elemento é o endereço da váriavel.
+  Sabendo disso, se torna possivel percorrer o arranjo por meio de apontadores.
+  ex: int myNumbers[4] = {25, 50, 75, 100};
+      int *ptr = myNumbers;
+
+      for(int i = 0; i < 4; i++)
+      {
+        printf("%d\n", ptr[i]); //  caso queira ler, adicione & depois da virgula
+      }
+  
