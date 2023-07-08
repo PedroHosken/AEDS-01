@@ -8,7 +8,7 @@ Nesse resumo trataremos sobre o metodo recursivo
   
   int somaRecursivo(Int max)
   {
-    if (max > 0)
+    if (max > 0)// teste =  criterio de parada
     {
         return max + somaRecursivo(max-1); // motor da recursividade
     }
