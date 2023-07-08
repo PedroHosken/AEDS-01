@@ -1,0 +1,32 @@
+Nesse resumo iremos tratar sobre a funçaõ e suas utilidades e estruturas
+
+. Definição:
+  A funçaõ é um tipo de estrutura no qual se passam parametros e ela retorna determinado tipo de valor.
+  Nesse sentido ela se diferencia do procedimento pois o procedimento nao retorna nada, ele epnas realiza o conjunto de acoes.
+
+. Estrutura :
+  int Soma(param)
+  {
+    ...
+    return(...);
+  }
+ A função apresenta tipo e deve retona algo. Ela pode ser de qualquer tipo.
+
+ void Soma(param)
+  {
+    ...
+    
+  }
+Nesse caso temo um procedimento, nao possui tipo e nao retorna nada.
+
+. Obs:
+  O programa deve possuir a funcao main. É onde começa a execução do programa.
+  Quando uma função é chamada, alguma variavel deve igual ao seu nome, ex: soma = Soma(param);
+  Nesse caso o programa executa essa funcao e retorna para o ponto de chamada com o valor obtido.
+  Parametro é o valor passado para a funcao e argumento é o valor do parametro.
+
+. Passagem de parametro:
+  Na chamada da funcao o tipo do parametro ão e necessario, mas na declaração da funcao é necessario ter o tipo do parametro.
+  A passagem de parametro pode ser por valor ou por referencia.
+  Na passagem por valor, passa-se o nome da variavel, e as mudancas realizadas na funcao nao sao refletidas no meio
+  
