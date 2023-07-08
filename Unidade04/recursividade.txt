@@ -1,0 +1,15 @@
+Nesse resumo trataremos sobre o metodo recursivo
+
+. Definição:
+  A recursividade é uma forma de repetição alternativa, que se difere da repetição iterativa, na qual se utiliza os metodos for, while, do ... while
+  Ja no metodo recursivo a repetição ocorre por meio da chamada da função ou metodo, porem com alguma alteração na passagem do argumento.
+
+. Exemplo:
+  
+  int somaRecursivo(Int max)
+  {
+    if (max > 0)
+    {
+        return max + somaRecursivo(max-1); // motor da recursividade
+    }
+  }
