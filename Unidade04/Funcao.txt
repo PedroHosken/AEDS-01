@@ -28,5 +28,18 @@ Nesse caso temo um procedimento, nao possui tipo e nao retorna nada.
 . Passagem de parametro:
   Na chamada da funcao o tipo do parametro ão e necessario, mas na declaração da funcao é necessario ter o tipo do parametro.
   A passagem de parametro pode ser por valor ou por referencia.
-  Na passagem por valor, passa-se o nome da variavel, e as mudancas realizadas na funcao nao sao refletidas no meio
+  Na passagem por valor, passa-se o nome da variavel, e as mudancas realizadas na funcao nao sao refletidas no meio.
+  Ja na passagem por referencia, na chamada da funcao usa o operador "&", e na criacao da funcao usa um ponteiro.
+  Ex: void CalculaMedia(int, int, float *)
+      CalculaMedia(num1, num2, &media);
+  Nesse caso as alteracoes feitas dentro da funcao se refletem no meio tambem.
+
+. Vetor e Matriz como Parametros:
+  Por ja serem considerados referencias, na sua passagem nao e necessario o uso do "&". Qualquer alteracao no vetor ou matriz se refletem no meio. Na chamada da funcao passa-se apenas o nome da matriz ou do arranjo.
+  Na criacao da funcao demostramos que e vetor ou matriz pelo uso de colchetes. No arranjo nao e necessario passar o tamanho dentro do colchete, se passa fora. Na matriz passa-se o valor das colunas, mas ambas devem estar sendo representadas.
+  Ex: int vet[N];
+      void entradavetor(int v [], int N)
+
+  Ex: int matx[3][2];
+      void entradamatriz (int rows, int columns, int matrix[][columns])
   
