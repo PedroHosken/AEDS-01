@@ -1,0 +1,31 @@
+Nessa semana fui apenas na primeira aula, o professor apresentou os tipos de dados e focou em demostrar suas variações.
+
+Tipos de Dados:
+   bool: False ou True
+   char: 'A'
+   int: 2
+   float: 2.5
+   double: 2.5// a precisao desse é melhor
+   string: conjunto de caracteres com \0 no final.
+
+Variavel: dado com seu conteudo mutavel. Ocupa um espaço na memoria.
+Apresenta: tipo, nome, formato e valor.
+
+
+Estruturas de Controle:
+
+Sequencia: apresenta uma sequencia de ações
+Alternativas:
+     Simples: if (){}
+     Dupla: if(){} else{}
+     Multipla: switch() {case 0:  break; deafault:} ou varios ifs e elses
+Repetição:
+     Teste no inicio: while(){}
+     Teste no inicio e variação: for(inicio; teste; variacao){}
+     Teste no fim : do {} while()
+
+Abstração de Comando
+     Função: tipo nome (parametro){return()}
+     Procedimento: void nome(parametro){}
+
+

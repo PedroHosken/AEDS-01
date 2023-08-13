@@ -1,0 +1,12 @@
+Nessa primeira semana as aulas foram mais introdutorias, tivemos contato com a noção de programação e de algoritmo.
+
+Formas de Desenvolvimento:
+     TDD: testar e retornar
+     P-A-S-T: metodo em experial de descobrir novas coisaas, testar e se aprimorar, a cada desenvolvimento.
+
+Função X Procedimento : função visa ação com intuito de obter um valor, procedimento visa apenas a ação.
+
+ArgC e ArgV: 
+    ArgC: Numero de parametros + nome
+    ArgV: Quais parametros estao sendo passados
+    
